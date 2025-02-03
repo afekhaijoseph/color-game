@@ -28,16 +28,21 @@ h2 {
 
 #score {
   color: #a856e3;
-  height: 1rem;
   font-size: 1.2rem;
   margin-left: 5px;
 }
 
+#status-container {
+  width: 70%;
+  height: 1rem;
+  flex-grow: 3;
+}
+
 #game-status {
-  height: 1.3rem;
-  margin: 0 auto;
-  width: 60%;
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.3rem;
 }
 
 .effect {
@@ -45,12 +50,13 @@ h2 {
 }
 
 .success {
-  color: #65f671;
-  animation: 0.2s tilt-shaking;
+  background-color: #65f671;
+  color: #000000;
 }
 
 .error {
-  color: #ec0d0d;
+  background-color: #ec0d0d;
+  color: #ffffff;
 }
 
 #reset {
@@ -119,24 +125,6 @@ h2 {
 
   100% {
     opacity: 0;
-  }
-}
-
-@keyframes tilt-shaking {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  25% {
-    transform: translate(5px, 5px) rotate(5deg);
-  }
-  50% {
-    transform: translate(0, 0) rotate(0eg);
-  }
-  75% {
-    transform: translate(-5px, 5px) rotate(-5deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(0deg);
   }
 }
 
