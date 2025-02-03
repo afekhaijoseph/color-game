@@ -83,7 +83,7 @@ h2 {
   max-width: 350px;
   height: 250px;
   background-color: red;
-  margin: 1rem auto 3rem auto;
+  margin: 1rem auto 2rem auto;
 }
 
 #button-container {
@@ -187,9 +187,6 @@ h2 {
 
   #game-info {
     margin-top: 2rem;
-  }
-
-  #game-status {
   }
 }
 
