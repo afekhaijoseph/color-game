@@ -141,10 +141,13 @@ h2 {
 }
 
 @media (max-width: 1040px) {
+  body {
+    background-color: #000;
+  }
   #parent-container {
     background-color: #000;
     width: 100%;
-    height: 100vh;
+    height: auto;
     padding: 3rem 1rem 1rem 1rem;
     margin: 0;
   }
