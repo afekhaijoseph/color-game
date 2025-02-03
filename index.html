@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d6afc5a8fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Color game</title>
+  </head>
+  <body>
+    <div id="parent-container">
+      <h2 data-testid="gameInstructions">
+        <span style="color: #ff0000">G</span>
+        <span style="color: #ffa500">U</span>
+        <span style="color: #ffff00">E</span>
+        <span style="color: #008000">S</span>
+        <span style="color: #0000ff">S</span>
+        &nbsp
+        <span style="color: #4b0082">T</span>
+        <span style="color: #ee82ee">H</span>
+        <span style="color: #ff0000">E</span>
+        &nbsp
+        <span style="color: #ffa500">C</span>
+        <span style="color: #ffff00">O</span>
+        <span style="color: #008000">L</span>
+        <span style="color: #0000ff">O</span>
+        <span style="color: #4b0082">R</span>
+      </h2>
+      <div id="game-info">
+        <p data-testid="score" id="score">Score: 0</p>
+        <p data-testid="gameStatus" id="game-status"></p>
+        <button data-testid="newGameButton" id="reset">Reset</button>
+      </div>
+
+      <div id="box-container">
+        <div data-testid="colorBox" id="box"></div>
+      </div>
+
+      <div id="button-parent-container">
+        <div id="button-container">
+          <button
+            class="color-button"
+            id="button-one"
+            data-testid="colorOption"
+          ></button>
+          <button
+            class="color-button"
+            id="button-two"
+            data-testid="colorOption"
+          ></button>
+          <button
+            class="color-button"
+            id="button-three"
+            data-testid="colorOption"
+          ></button>
+          <button
+            class="color-button"
+            id="button-four"
+            data-testid="colorOption"
+          ></button>
+          <button
+            class="color-button"
+            id="button-five"
+            data-testid="colorOption"
+          ></button>
+          <button
+            class="color-button"
+            id="button-six"
+            data-testid="colorOption"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
