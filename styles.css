@@ -6,11 +6,13 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
+  font-family: "Tektur", serif;
 }
 
 h2 {
   text-align: center;
   font-size: 1.5rem;
+  font-family: "Matemasie", serif;
 }
 
 #parent-container {
@@ -24,29 +26,31 @@ h2 {
 #game-info {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 #score {
-  color: #a856e3;
+  color: #ffffff;
   font-size: 1.2rem;
   margin-left: 5px;
 }
 
 #status-container {
-  width: 70%;
+  width: 100%;
   height: 1rem;
-  flex-grow: 3;
 }
 
 #game-status {
   text-align: center;
-  width: 80%;
+  width: fit-content;
   margin: 0 auto;
-  font-size: 1.3rem;
+  padding: 3px;
+  font-size: 1rem;
+  border-radius: 5px;
 }
 
 .effect {
-  animation: 3s fade-off ease-out forwards;
+  animation: 0.8s fade-off ease-out;
 }
 
 .success {
@@ -61,11 +65,18 @@ h2 {
 
 #reset {
   border: none;
-  background: #a856e3;
+  background: #ffffff;
   font-size: 1rem;
-  color: #fff;
+  font-family: "Tektur", serif;
+  color: #000000;
   border-radius: 2px;
   padding: 3px;
+}
+
+#reset:hover {
+  color: #ffffff;
+  background: #000000;
+  border: 2px solid #ffffff;
 }
 
 #box {
@@ -120,11 +131,37 @@ h2 {
 
 @keyframes fade-off {
   0% {
-    opacity: 1;
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
   }
-
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(0px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(2px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+  }
   100% {
-    opacity: 0;
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 
@@ -150,6 +187,9 @@ h2 {
 
   #game-info {
     margin-top: 2rem;
+  }
+
+  #game-status {
   }
 }
 

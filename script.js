@@ -26,24 +26,24 @@ coloredButtons.forEach((coloredButton) => {
     console.log(chosenButton, boxCurrentColor);
     if (chosenButton == boxCurrentColor) {
       counter++;
-      gameStatus.textContent = "That was accurate!";
+      gameStatus.innerHTML = `<i class="fa-solid fa-check"></i>  That was correct, awesome!`;
       gameStatus.classList.add("effect", "success");
-      score.textContent = `Score: ${counter}`;
+      score.innerHTML = `Score: ${counter}`;
       let randomColor = Math.floor(Math.random() * randomColors.length);
       boxCurrentColor = randomColors[randomColor];
       boxColor.style.backgroundColor = boxCurrentColor;
 
       setTimeout(() => {
-        gameStatus.textContent = "";
+        gameStatus.innerHTML = "";
         gameStatus.classList.remove("effect", "success");
-      }, 2000);
+      }, 1500);
     } else {
-      gameStatus.textContent = "I'm not so sure, maybe try again?";
+      gameStatus.innerHTML = `<i class="fa-regular fa-circle-xmark"></i>  That's wrong, maybe try again?`;
       gameStatus.classList.add("effect", "error");
       setTimeout(() => {
         gameStatus.textContent = "";
         gameStatus.classList.remove("effect", "error");
-      }, 2000);
+      }, 1500);
     }
   });
 });
